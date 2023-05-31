@@ -74,7 +74,6 @@ board/pine64/rockpro64/post-build.sh Shellcheck
 board/qemu/aarch64-sbsa/assemble-flash-images Shellcheck
 board/qemu/microblazebe-mmu/0001-net-xilinx-xemaclite-add-2.00.b-revision.patch Upstream
 board/qemu/microblazeel-mmu/0001-net-xilinx-xemaclite-add-2.00.b-revision.patch Upstream
-board/qemu/ppc-mpc8544ds/patches/linux/0001-powerpc-Fix-mcpu-options-for-SPE-only-compiler.patch Upstream
 board/qemu/x86/post-build.sh Shellcheck
 board/qemu/x86_64/post-build.sh Shellcheck
 board/qmtech/zynq/patches/linux/0001-DTS-for-QMTech-Zynq-starter-kit.patch Upstream
@@ -121,8 +120,6 @@ boot/lpc32xxcdl/0002-delete_redundant_files.patch Upstream
 boot/lpc32xxcdl/0003-libnosys_gnu.patch Upstream
 boot/lpc32xxcdl/0004-slashes.patch Upstream
 boot/mv-ddr-marvell/0001-Makefile-disable-stack-protection.patch Upstream
-boot/opensbi/0.9/0001-Makefile-Don-t-specify-mabi-or-march.patch Upstream
-boot/opensbi/0.9/0002-Makefile-unconditionally-disable-SSP.patch Upstream
 boot/optee-os/3.13.0/0001-core-zlib-fix-build-warning-when-_LFS64_LARGEFILE-is.patch Upstream
 boot/syslinux/0001-bios-Fix-alignment-change-with-gcc-5.patch Upstream
 boot/syslinux/0002-Disable-PIE-to-avoid-FTBFS-on-amd64.patch Upstream
@@ -183,7 +180,6 @@ package/asterisk/0003-build-ensure-target-directory-for-modules-exists.patch Ups
 package/asterisk/0004-install-samples-need-the-data-files.patch Upstream
 package/asterisk/0005-configure-fix-detection-of-re-entrant-resolver-funct.patch Upstream
 package/asterisk/0006-main-iostream.c-fix-build-with-libressl.patch Upstream
-package/at-spi2-atk/0001-meson-add-tests-option.patch Upstream
 package/at/0001-Makefile.in-fix-make-install-for-non-root-don-t-stri.patch Upstream
 package/at/S99at Indent Variables
 package/atest/0001-seq.h-fix-build-with-gcc-10.patch Upstream
@@ -219,22 +215,6 @@ package/beecrypt/0002-build-system.patch Upstream
 package/beecrypt/0003-don-t-check-for-cplusplus-compiler.patch Upstream
 package/benejson/0001-c-std.patch Upstream
 package/benejson/0002-Use-print-as-a-function-for-Py3-compatibility.patch Upstream
-package/bento4/0001-Add-support-for-cmake-install.patch Upstream
-package/bento4/0002-Add-additional-methods-funtions-and-passing-poolid.patch Upstream
-package/bento4/0003-Backport-Smmothstream-changes.patch Upstream
-package/bento4/0004-more-SPS-parameters.patch Upstream
-package/bento4/0005-AVC-extract-VUI-values-from-SPS.patch Upstream
-package/bento4/0006-Implement-SPS-Frame-parser.patch Upstream
-package/bento4/0007-Fix-segfault-when-AP4_Sample-s-seek.patch Upstream
-package/bento4/0008-Hack-HBO.patch Upstream
-package/bento4/0009-Android-32-ftello-fix.patch Upstream
-package/bento4/0010-Dazn-sample-duration-workaround.patch Upstream
-package/bento4/0011-Add-argument-to-reuse-single-sample-decrypter.patch Upstream
-package/bento4/0012-Static-ReadGolomb-SignedGolomb.patch Upstream
-package/bento4/0013-Add-GetChannels-method.patch Upstream
-package/bento4/0014-Implemented-GetSampleIndexForTimeStamp-GetNearestSyn.patch Upstream
-package/bento4/0015-Avoid-set-next-fragment-position.patch Upstream
-package/bento4/0016-Fix-segfault-in-AP4_LinearReader-ProcessMoof.patch Upstream
 package/berkeleydb/0001-cwd-db_config.patch Upstream
 package/berkeleydb/0002-atomic_compare_exchange.patch Upstream
 package/bind/0001-cross.patch Upstream
@@ -306,7 +286,6 @@ package/cgroupfs-mount/S30cgroupfs Indent Shellcheck Variables
 package/chipmunk/0001-Fix-build-failure-on-musl.patch Upstream
 package/chocolate-doom/0001-Remove-redundant-demoextend-definition.patch Upstream
 package/chrony/S49chrony Indent Shellcheck Variables
-package/clamav/0001-mbox-do-not-use-backtrace-if-using-uClibc-without-ba.patch Upstream
 package/clang/0001-lib-Driver-ToolChains-Gnu-Use-GCC_INSTALL_PREFIX-in-.patch Upstream
 package/cmake/0001-rename-cmake-rootfile.patch Upstream
 package/cmocka/0001-Don-t-redefine-uintptr_t.patch Upstream
@@ -317,9 +296,6 @@ package/connman/0003-wispr-Update-portal-context-references.patch Upstream
 package/connman/S45connman Variables
 package/copas/0001-Do-not-load-coxpcall-for-LuaJIT.patch Upstream
 package/coremark-pro/coremark-pro.sh.in Shellcheck
-package/cpio/0001-Minor-fix.patch Upstream
-package/cpio/0002-Rewrite-dynamic-string-support.patch Upstream
-package/cpio/0003-Fix-previous-commit.patch Upstream
 package/cppdb/0001-mysql-library-suffix.patch Upstream
 package/cpulimit/0001-Fix-crash-and-compiler-warnings.patch Upstream
 package/cpulimit/0002-Remove-sys-sysctl.h-and-add-missing-libgen.h-include.patch Upstream
@@ -373,11 +349,6 @@ package/dhrystone/0003-exit.patch Sob Upstream
 package/dhrystone/0004-headers.patch Sob Upstream
 package/dhrystone/0005-prototypes.patch Sob Upstream
 package/dht/0001-cmake.patch Upstream
-package/diffutils/0001-m4-stack-direction.m4-fix-build-on-microblazeel.patch Upstream
-package/diffutils/0002-sigsegv-fix-build-on-or1k.patch Upstream
-package/diffutils/0003-sys_random-port-better-to-uClibc-1-0-35.patch Upstream
-package/diffutils/0004-sigsegv-Fix-compilation-error-on-arceb-CPUs.patch Upstream
-package/diffutils/0005-sigsegv-Add-support-for-Linux-PowerPC-32-bit-with-mu.patch Upstream
 package/dillo/0001-usr-local-include.patch Upstream
 package/dillo/0002-Fix-openssl-detection.patch Upstream
 package/dillo/0004-fix-build-with-gcc-10.patch Upstream
@@ -519,8 +490,6 @@ package/fluent-bit/0001-lib-cfl-fixup-static_assert.patch Upstream
 package/fluent-bit/0002-lib-c-ares-fixup-static_assert.patch Upstream
 package/fluent-bit/0003-fix-build-without-C.patch Upstream
 package/fluxbox/0001-fixes-bug-1138.patch Upstream
-package/fontconfig/0001-Fix-the-build-issue-with-enable-static.patch Upstream
-package/fontconfig/0002-add-pthread-as-a-dependency-of-a-static-lib.patch Upstream
 package/freeipmi/0001-add-disable-doc.patch Upstream
 package/freeradius-client/0001-fix-for-nettle.patch Upstream
 package/freerdp/0001-Fix-variable-declaration-in-loop.patch Upstream
@@ -605,10 +574,7 @@ package/giblib/0001-fix-imlib2-detection.patch Upstream
 package/giflib/0001-Makefile-add-targets-to-manage-static-building.patch Upstream
 package/git-crypt/0001-fix-build-with-libressl-3.5.0.patch Upstream
 package/gli/0001-Optional-building-tests.patch Upstream
-package/glmark2/0001-wscript-use-find_program-to-find-wayland-scanner.patch Upstream
-package/glmark2/0002-libmatrix-Add-missing-utility-include.patch Upstream
 package/glog/0001-added-emscripten-support.patch Upstream
-package/gloox/0001-src-connectiontcpserver-cpp-fix-musl.patch Upstream
 package/glorytun/0001-Add-support-for-Apple-silicon.patch Upstream
 package/glorytun/0002-aegis256.c-fix-aarch64-build-with-uclibc.patch Upstream
 package/gmp/0001-mpz-inp_raw.c-Avoid-bit-size-overflows.patch Upstream
@@ -622,7 +588,6 @@ package/gob2/0001-dont-include-from-prefix.patch Upstream
 package/gobject-introspection/0001-disable-tests.patch Upstream
 package/gobject-introspection/0002-Add-rpath-links-to-ccompiler.patch Upstream
 package/gobject-introspection/0003-giscanner-ignore-error-return-codes-from-ldd-wrapper.patch Upstream
-package/gocryptfs/0001-go.mod-fix-jacobsa-crypto-build-on-riscv64.patch Upstream
 package/google-breakpad/gen-syms.sh Shellcheck
 package/gpm/0001-Added-musl-support-to-libgpm-and-the-daemon.patch Upstream
 package/gpm/0002-Install-unversioned-solibrary.patch Upstream
@@ -726,10 +691,6 @@ package/keyutils/0002-cifs.patch Sob Upstream
 package/kmod/0001-fix-O_CLOEXEC.patch Upstream
 package/kodi-texturepacker/0001-texturepacker.patch Upstream
 package/kodi-texturepacker/0002-fix-texture-packer-cmake-source-dir.patch Upstream
-package/kodi/0001-kodi-config.cmake-use-CMAKE_FIND_ROOT_PATH-to-fix-cr.patch Upstream
-package/kodi/0002-cmake-findpython.patch Upstream
-package/kodi/0003-cmake-search-for-python-interpreter.patch Upstream
-package/kodi/0004-cmake-allow-to-override-PYTHON_EXECUTABLE.patch Upstream
 package/kodi/S50kodi Shellcheck Variables
 package/latencytop/0001-makefile.patch Upstream
 package/lbase64/0001-retro-compatible-with-Lua-5.1.patch Upstream
@@ -795,15 +756,13 @@ package/libfuse/0002-util-ulockmgr_server-c-conditionally-define-closefrom-fix-g
 package/libfuse3/0001-Fix-MS_LAZYTIME-not-defined-on-uclibc.patch Upstream
 package/libgcrypt/0001-configure.ac-add-an-option-to-disable-tests.patch Upstream
 package/libgdiplus/0001-Build-unit-tests-only-when-enable-unit-tests-is-pass.patch Upstream
-package/libgit2/0001-sysdir-Do-not-declare-win32-functions-on-non-win32-p.patch Upstream
 package/libglfw/0001-Wayland-Remove-extra-cmake-modules-dependency.patch Upstream
 package/libglfw/0002-src-CMakeLists.txt-allow-override-of-wayland-pkgdata.patch Upstream
 package/libgpgme/0001-Fix-build-without-threads.patch Upstream
 package/libgpiod/0001-build-add-a-configure-switch-for-building-examples.patch Upstream
 package/libgsm/0001-misc-fixes-from-archlinux.patch Upstream
 package/libgtk2/0001-reduce-dependencies.patch Upstream
-package/libgtk3/0001-disable-atk-bridge.patch Upstream
-package/libgtk3/0002-Remove-Gdk-dependency-from-gtk-encode-symbolic-svg.patch Upstream
+package/libgtk3/0001-Remove-Gdk-dependency-from-gtk-encode-symbolic-svg.patch Upstream
 package/libhdhomerun/0001-dont-strip.patch Upstream
 package/libhid/0001-dont-fiddle-with-debug-flags.patch Upstream
 package/libhid/0002-no-newline-in-ldflags.patch Upstream
@@ -989,9 +948,9 @@ package/lua/5.1.5/0012-fix-reader-at-eoz.patch Upstream
 package/lua/5.3.6/0001-root-path.patch Upstream
 package/lua/5.3.6/0002-shared-libs-for-lua.patch Upstream
 package/lua/5.3.6/0003-linenoise.patch Upstream
-package/lua/5.4.5/0001-root-path.patch Upstream
-package/lua/5.4.5/0002-shared-libs-for-lua.patch Upstream
-package/lua/5.4.5/0011-linenoise.patch Upstream
+package/lua/5.4.6/0001-root-path.patch Upstream
+package/lua/5.4.6/0002-shared-libs-for-lua.patch Upstream
+package/lua/5.4.6/0011-linenoise.patch Upstream
 package/luajit/0001-no-bin-symlink.patch Upstream
 package/luajit/0002-install-inc.patch Upstream
 package/luasyslog/0001-remove-AX_LUA_LIBS.patch Upstream
@@ -1035,9 +994,6 @@ package/mender-connect/S43mender-connect Shellcheck
 package/menu-cache/0001-Support-gcc10-compilation.patch Upstream
 package/mesa3d-demos/0001-demos-makes-opengl-an-optional-component.patch Upstream
 package/mesa3d/0001-meson-Set-proper-value-for-LIBCLC_INCLUDEDIR.patch Upstream
-package/mesa3d/0002-vc4-add-meson-option-to-disable-optional-neon-suppor.patch Upstream
-package/mesa3d/0003-src-util-rand_xor-Include-stddef.h-to-fix-build-erro.patch Upstream
-package/mesa3d/0004-Fix-uClibc-build.patch Upstream
 package/meson-tools/0001-amlbootenc-gxl-remove-non-std-C-convention-in-for.patch Upstream
 package/meson/0001-Prefer-ext-static-libs-when-default-library-static.patch Upstream
 package/meson/0002-mesonbuild-dependencies-base.py-add-pkg_config_stati.patch Upstream
@@ -1113,8 +1069,6 @@ package/nettle/0001-disable-testsuite-examples.patch Upstream
 package/network-manager/0001-build-meson-add-option-to-set-the-mobile-broadband-p.patch Upstream
 package/network-manager/0002-meson.build-fix-build-failure-with-Dmodem_manager-fa.patch Upstream
 package/network-manager/S45network-manager ConsecutiveEmptyLines EmptyLastLine Shellcheck Variables
-package/nfs-utils/0001-nfsrahead-fix-linking-while-static-linking.patch Upstream
-package/nfs-utils/0002-configure.ac-allow-to-disable-nfsrahead-tool.patch Upstream
 package/nfs-utils/S60nfs ConsecutiveEmptyLines Shellcheck Variables
 package/nginx-modsecurity/0001-config-use-pkg-config.patch Upstream
 package/nginx/0001-auto-type-sizeof-rework-autotest-to-be-cross-compila.patch Upstream
@@ -1168,7 +1122,6 @@ package/odb/0011-Adjust-to-changes-in-GCC-10.patch Upstream
 package/odb/0012-Adjust-to-changes-in-GCC-11.patch Upstream
 package/odb/0013-Resolve-name-lookup-ambiguity-causing-error-with-GCC.patch Upstream
 package/ofono/0001-uclibc-backtrace.patch Upstream
-package/ofono/0002-fix-musl-compile.patch Upstream
 package/ofono/S46ofono Variables
 package/ola/0001-ola-fix-compilation-with-musl-1-2-3.patch Upstream
 package/olsr/0001-olsrd-migrate-to-using-bison-3.7.1.patch Upstream
@@ -1181,7 +1134,6 @@ package/open-iscsi/0001-SHA3-is-not-supported-by-libressl.patch Upstream
 package/open-plc-utils/0001-Remove-OWNER-and-GROUPS-parameters-to-install.patch Upstream
 package/open-plc-utils/0002-plc-plc.h-fix-build-with-gcc-10.patch Upstream
 package/open2300/0001-fix-makefile.patch Upstream
-package/openblas/0001-Makefile.system-don-t-specify-optimization-level-bui.patch Upstream
 package/openjdk/17.0.6+10/0001-Add-ARCv2-ISA-processors-support-to-Zero.patch Upstream
 package/openldap/0001-fix_cross_strip.patch Upstream
 package/openldap/0002-fix-bignum.patch Upstream
@@ -1219,8 +1171,6 @@ package/openvmtools/0012-Make-HgfsConvertFromNtTimeNsec-aware-of-64-bit-time_.pa
 package/openvmtools/shutdown Shellcheck
 package/openvpn/S60openvpn Indent Shellcheck Variables
 package/oprofile/0001-musl.patch Upstream
-package/optee-client/0001-libteeacl-condition-libteeacl-with-WITH_TEEACL.patch Upstream
-package/optee-client/0002-libteeacl-use-realloc-instead-of-reallocarray.patch Upstream
 package/opusfile/0001-Propagate-allocation-failure-from-ogg_sync_buffer.patch Upstream
 package/oracle-mysql/0000-ac_cache_check.patch Upstream
 package/oracle-mysql/0001-configure-ps-cache-check.patch Upstream
@@ -1373,7 +1323,6 @@ package/python3/0030-Add-an-option-to-disable-the-berkeleydb-module.patch Upstre
 package/python3/0031-lib-crypt-uClibc-ng-doesn-t-set-errno-when-encryptio.patch Upstream
 package/qemu/0001-tests-fp-disable-fp-bench-build-by-default.patch Upstream
 package/qemu/0002-softmmu-qemu-seccomp.c-add-missing-header-for-CLONE_.patch Upstream
-package/qemu/0003-target-sh4-Mask-restore-of-env-flags-from-tb-flags.patch Upstream
 package/qextserialport/0001-Create-a-main-include-file-QExtSerialPort.patch Upstream
 package/qextserialport/0002-Tell-qmake-to-add-a-pkgconfig-file-to-ease-usage-wit.patch Upstream
 package/qt5/qt5base/0001-qtbase-Fix-build-error-when-using-EGL.patch Upstream
@@ -1440,7 +1389,6 @@ package/rpi-userland/0007-GLES2-gl2ext.h-add-GLint64-GLuint64-and-GLsync-typed.p
 package/rt-tests/0001-Fix-a-build-issue-with-uClibc-ng.patch Upstream
 package/rt-tests/0002-Makefile-drop-explicit-undefine-PYLIB-for-compatibil.patch Upstream
 package/rtl8192eu/0002-Fix-conflicting-get_ra-on-PowerPC.patch Upstream
-package/rtl8812au-aircrack-ng/0001-Fix-build-failure-on-PowerPC64.patch Upstream
 package/rtl_433/0001-CMakeLists.txt-use-pkg-config-to-detect-openssl-when.patch Upstream
 package/rtl_433/0002-minor-Fix-mongoose-build-without-threads.patch Upstream
 package/rtmpdump/0001-include-limits.h.patch Upstream
@@ -1458,8 +1406,6 @@ package/safeclib/0001-fix-armv7-asm-inline-error-GH-115.patch Upstream
 package/samba4/0001-libreplace-disable-libbsd-support.patch Upstream
 package/samba4/0002-build-find-pre-built-heimdal-build-tools-in-case-of-.patch Upstream
 package/samba4/0003-ldap_message_test.c-include-stdint.h-before-cmoka.h.patch Upstream
-package/samba4/0004-lib-util-Add-signal.h-include.patch Upstream
-package/samba4/0005-samba-4.16.2-fix-build-without-innetgr.patch Upstream
 package/samba4/S91smb Indent Shellcheck Variables
 package/sane-backends/0001-sane_backend-add-missing-config.h.patch Upstream
 package/screen/0001-no-memcpy-fallback.patch Upstream
@@ -1546,9 +1492,6 @@ package/start-stop-daemon/0001-add-uclibc-alias-and-musl.patch Upstream
 package/start-stop-daemon/0002-just-warn-on-missing-arch.patch Upstream
 package/statserial/0001-ncurses-link.patch Upstream
 package/stellarium/0001-add-missing-include.patch Upstream
-package/stress-ng/0001-stress-mmap-fix-build-with-HAVE_SYSCALL-or-__NR_mmap.patch Upstream
-package/stress-ng/0002-stress-regs-fix-build-on-riscv32.patch Upstream
-package/stress-ng/0003-Makefile-introduce-PRESERVE_CFLAGS-build-flag.patch Upstream
 package/stunnel/S50stunnel Indent Shellcheck Variables
 package/sudo/0001-configure.ac-fix-openssl-static-build.patch Upstream
 package/supervisor/S99supervisord Variables
@@ -1596,9 +1539,6 @@ package/tor/0003-patch-src_lib_tls_x509_openssl_c.patch Upstream
 package/tovid/0001-manpage.patch Upstream
 package/tpm2-abrmd/S80tpm2-abrmd Indent Shellcheck Variables
 package/tpm2-tss/0001-Temporary-fix-for-build-without-C.patch Upstream
-package/transmission/0001-fix-utypes.patch Upstream
-package/transmission/0002-fix-utp-include.patch Upstream
-package/transmission/0003-configure.ac-fix-autoreconf-with-autoconf-2.70.patch Upstream
 package/transmission/S92transmission ConsecutiveEmptyLines Indent Shellcheck Variables
 package/triggerhappy/S10triggerhappy Indent Shellcheck Variables
 package/trinity/0001-Fix-build-with-GCC-10.patch Upstream
@@ -1644,7 +1584,6 @@ package/vala/0001-dont-add-dirty-to-valac-version.patch Upstream
 package/vala/vala-wrapper Shellcheck
 package/valgrind/0001-workaround-SIGSEGV-on-PPC.patch Upstream
 package/valgrind/0002-Define-PTRACE_GETSIGINFO-on-PowerPC-when-not-availab.patch Upstream
-package/valgrind/0003-coregrind-fix-compilation-for-uclibc.patch Upstream
 package/vboot-utils/0001-Add-missing-definition-of-MTD_CHAR_MAJOR.patch Upstream
 package/vboot-utils/0002-Add-missing-header-include-for-ssize_t.patch Upstream
 package/vboot-utils/0003-Avoid-RSA-type-redefinition.patch Upstream
@@ -1722,11 +1661,6 @@ package/x11r7/xdriver_xf86-input-joystick/0001-build-get-rid-of-sdkdir.patch Ups
 package/x11r7/xdriver_xf86-input-libinput/0001-build-get-rid-of-sdkdir.patch Upstream
 package/x11r7/xdriver_xf86-input-mouse/0001-build-get-rid-of-sdkdir.patch Upstream
 package/x11r7/xdriver_xf86-input-synaptics/0001-build-get-rid-of-sdkdir.patch Upstream
-package/x11r7/xdriver_xf86-video-ark/0001-mibstore.patch Upstream
-package/x11r7/xdriver_xf86-video-ati/0001-Fix-link-failure-with-gcc-10.patch Upstream
-package/x11r7/xdriver_xf86-video-ati/0002-ati-cleanup-terminology-to-use-primary-secondary.patch Upstream
-package/x11r7/xdriver_xf86-video-ati/0003-Guard-local-variable-priv-only-used-with-glamor.patch Upstream
-package/x11r7/xdriver_xf86-video-ati/0004-Only-include-dri-h-with-older-versions-of-xserver.patch Upstream
 package/x11r7/xdriver_xf86-video-fbturbo/0001-sunxi_x_g2d-drop-unused-dri2-include.patch Upstream
 package/x11r7/xdriver_xf86-video-fbturbo/0002-Use-own-thunk-functions-instead-of-fbdevHW-Weak.patch Upstream
 package/x11r7/xdriver_xf86-video-fbturbo/0003-Update-for-1.20-ABI.patch Upstream
@@ -1740,8 +1674,6 @@ package/x11r7/xdriver_xf86-video-imx/0005-xf86-video-imxfb-fix-m4-hardcodded-pat
 package/x11r7/xdriver_xf86-video-imx/0006-xserver-1.14-compat.patch Upstream
 package/x11r7/xdriver_xf86-video-mach64/0001-cross-compile.patch Sob Upstream
 package/x11r7/xdriver_xf86-video-nouveau/0001-nouveau-fixup-driver-for-new-X-server-ABI.patch Upstream
-package/x11r7/xdriver_xf86-video-savage/0001-cross-compile.patch Sob Upstream
-package/x11r7/xdriver_xf86-video-savage/0002-xorg-xserver120.patch Upstream
 package/x11r7/xdriver_xf86-video-tdfx/0001-cross.patch Sob Upstream
 package/x11r7/xserver_xorg-server/0001-include-misc.h-fix-uClibc-build.patch Upstream
 package/x11r7/xserver_xorg-server/S40xorg Shellcheck Variables
